@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+const bcrypt = require("../app.js").bcrypt;
 
 /* GET home page. */
 router.get("/", function (req, res, next) {

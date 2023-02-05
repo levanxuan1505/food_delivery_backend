@@ -11,6 +11,11 @@ var cartRouter = require("./routes/cart.route");
 var foodRouter = require("./routes/food.route");
 var bookmarkRouter = require("./routes/bookmark.route");
 const MongoDB = require("./services/mongodb.service");
+//
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
+module.exports.bcrypt = bcrypt;
+//
 MongoDB.connectToMongoDB();
 var app = express();
 
