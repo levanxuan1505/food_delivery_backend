@@ -1,0 +1,24 @@
+{
+  "name": "app-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.12.1",
+    "morgan": "~1.9.1"
+  },
+  "projectConfig": {
+    "mongoConnectionUrl": "mongodb://localhost:27017",
+    "serverIp": "192.168.1.76",
+    "serverPort": 3000
+  }
+}
